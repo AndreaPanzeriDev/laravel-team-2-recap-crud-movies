@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Title</title>
+  <title>@yield('title', 'home')</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,14 +16,14 @@
 <body>
   <header>
     <!-- place navbar here -->
-    @include('header')
+    @include('component.header')
   </header>
   <main>
     @yield('main-content')
   </main>
   <footer>
     <!-- place footer here -->
-    @include('footer')
+    @include('component.footer')
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
